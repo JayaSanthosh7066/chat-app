@@ -9,7 +9,7 @@ export const login = async (req, res) => {
       password,
       user?.password || ""
     );
-    if (!user || ispasswordcorrect) {
+    if (!user || !ispasswordcorrect) {
       return res.status(400).json({ error: "Invalid username or password" });
     }
     generateToken(user._id, res);
