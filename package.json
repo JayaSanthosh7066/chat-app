@@ -24,8 +24,6 @@
     "socket.io": "^4.7.4"
   },
   "devDependencies": {
-    "@types/socket.io-client": "^3.0.0",
     "nodemon": "^3.1.0"
-  },
-  "include":["src","node_modules/@types"]
+  }
 }
