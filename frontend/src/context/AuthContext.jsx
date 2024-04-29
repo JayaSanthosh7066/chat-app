@@ -8,7 +8,7 @@ export const useAuthContext = () => {
 
 export const AuthContextProvider = ({ children }) => {
   const [authUser, setAuthUser] = useState(
-    JSON.parse(localStorage.getItem("chat-user")) || "User"
+    JSON.parse(localStorage.getItem("chat-user")) || ""
   );
 
   return (
