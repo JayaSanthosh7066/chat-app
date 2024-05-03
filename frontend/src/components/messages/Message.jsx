@@ -14,7 +14,6 @@ const Message = ({ message }) => {
   const bubbleBgColor = fromMe ? "bg-blue-500" : "";
 
   const shakeClass = message.shouldShake ? "shake" : "";
-
   return (
     <div className={`chat ${chatClassName}`}>
       <div className="chat-image avatar">
